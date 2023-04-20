@@ -32,11 +32,12 @@ public class Customer {
         this.email = email;
     }
 
+    public ArrayList<Booking> getBooking() {
+        return booking;
+    }
+
     public void setBooking(ArrayList<Booking> booking) {
         this.booking = booking;
     }
 
-    public ArrayList<Booking> getBooking() {
-        return booking;
-    }
 }

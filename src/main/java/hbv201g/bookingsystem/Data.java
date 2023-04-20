@@ -18,7 +18,7 @@ public class Data {
     }
 
     public ObservableList<Booking> getBooking(){
-        ObservableList<Booking> booking =FXCollections.observableArrayList();
+        ObservableList<Booking> booking = FXCollections.observableArrayList();
         return booking;
     }
 
@@ -26,6 +26,7 @@ public class Data {
         ArrayList<Tour> tour = new ArrayList<>();
         tour.add(new Tour("Sightseeing"));
         tour.add(new Tour("Horse riding"));
+
         return tour;
     }
 
