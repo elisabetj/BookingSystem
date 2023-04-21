@@ -6,8 +6,10 @@ Design Pattern used is Program to Interfaces not implementations
 
 This project is built on [previous work](https://github.com/elisabetj/softwareConstructionProject)  
 
-uml
-<br>
-how to run jar
+[UML diagram](ProjectDiagram.png)
+
 
 [License](LICENSE.md)
+
+
+#### How to run jar file
