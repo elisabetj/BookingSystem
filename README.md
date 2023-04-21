@@ -13,6 +13,6 @@ This project is built on [previous work](https://github.com/elisabetj/softwareCo
 
 
 #### How to run jar file
-java -jar MainJar.jar
+java -jar BookingSystem.jar
 
 
