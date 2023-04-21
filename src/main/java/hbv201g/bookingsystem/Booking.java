@@ -5,6 +5,7 @@ package hbv201g.bookingsystem;
  **/
 public interface Booking {
     void bookTour(Tour trip, Customer customer);
+
     void bookHotel(Hotel hotel, Customer customer);
 
 }

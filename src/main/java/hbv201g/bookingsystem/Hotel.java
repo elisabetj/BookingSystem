@@ -6,13 +6,13 @@ package hbv201g.bookingsystem;
 public class Hotel {
     private String hotel;
 
-    @Override
-    public String toString(){
-        return hotel;
-    }
-
     public Hotel(String hotel) {
         this.hotel = hotel;
+    }
+
+    @Override
+    public String toString() {
+        return hotel;
     }
 
     public String getHotel() {

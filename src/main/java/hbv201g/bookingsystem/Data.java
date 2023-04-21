@@ -8,14 +8,15 @@ import javafx.collections.ObservableList;
  **/
 
 public class Data {
-    public Data(){}
+    public Data() {
+    }
 
-    public ObservableList<Customer> getCustomer(){
+    public ObservableList<Customer> getCustomer() {
         ObservableList<Customer> customer = FXCollections.observableArrayList();
         return customer;
     }
 
-    public ObservableList<Booking> getBooking(){
+    public ObservableList<Booking> getBooking() {
         ObservableList<Booking> bookings = FXCollections.observableArrayList();
         return bookings;
     }
@@ -30,7 +31,7 @@ public class Data {
         return tour;
     }
 
-    public ObservableList<Hotel> getHotel(){
+    public ObservableList<Hotel> getHotel() {
         ObservableList<Hotel> hotel = FXCollections.observableArrayList();
         hotel.add(new Hotel("Hotel Reykjavik"));
         hotel.add(new Hotel("Hotel Akureyri"));

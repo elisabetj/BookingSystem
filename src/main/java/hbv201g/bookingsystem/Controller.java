@@ -15,9 +15,9 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
+    Data data = new Data();
     private ObservableList<Tour> tours = FXCollections.observableArrayList();
     private ObservableList<Hotel> hotels = FXCollections.observableArrayList();
-
     @FXML
     private ListView<Hotel> hotelListView = new ListView<>(hotels);
     @FXML
@@ -33,9 +33,6 @@ public class Controller implements Initializable {
     @FXML
     private Label bookingConfirmed;
 
-
-    Data data = new Data();
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         tours = data.getTour();
@@ -45,15 +42,15 @@ public class Controller implements Initializable {
         hotelListView.setItems(hotels);
     }
 
-    public void listViewHotelClicked(MouseEvent mouseEvent){
+    public void listViewHotelClicked(MouseEvent mouseEvent) {
         Hotel selectedHotel = hotelListView.getSelectionModel().getSelectedItem();
     }
 
-    public void listViewTourClicked(MouseEvent mouseEvent){
+    public void listViewTourClicked(MouseEvent mouseEvent) {
         Tour selectedTour = tourListView.getSelectionModel().getSelectedItem();
     }
 
-    public void buttonHotelOnActivity(ActionEvent event){
+    public void buttonHotelOnActivity(ActionEvent event) {
 
         String name = customerTextField.getText();
         String email = emailTextField.getText();
@@ -61,14 +58,14 @@ public class Controller implements Initializable {
         Customer customer = new Customer(name, email);
         Hotel hotel = hotelListView.getSelectionModel().getSelectedItem();
 
-        Booking booking= new Trip();
+        Booking booking = new Trip();
         booking.bookHotel(hotel, customer);
 
         bookingConfirmed.setText(hotel + " confirmed. Booked by " + customer.getName() + ". Email: " + customer.getEmail());
 
     }
 
-    public void buttonTourOnActivity(ActionEvent event){
+    public void buttonTourOnActivity(ActionEvent event) {
 
         String name = customerTextField.getText();
         String email = emailTextField.getText();
@@ -76,7 +73,7 @@ public class Controller implements Initializable {
         Customer customer = new Customer(name, email);
         Tour tour = tourListView.getSelectionModel().getSelectedItem();
 
-        Booking booking= new Trip();
+        Booking booking = new Trip();
         booking.bookTour(tour, customer);
 
         bookingConfirmed.setText(tour + " confirmed. Booked by " + customer.getName() + ". Email: " + customer.getEmail());

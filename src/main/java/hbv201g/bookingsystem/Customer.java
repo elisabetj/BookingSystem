@@ -1,7 +1,5 @@
 package hbv201g.bookingsystem;
 
-import java.util.ArrayList;
-
 /**
  * @author Ester Jenný (ejb7)
  **/
