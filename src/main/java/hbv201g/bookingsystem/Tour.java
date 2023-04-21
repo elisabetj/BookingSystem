@@ -5,6 +5,11 @@ package hbv201g.bookingsystem;
  **/
 public class Tour {
     private String tour;
+
+    @Override
+    public String toString(){
+        return tour;
+    }
     public Tour(String tour) {
         this.tour = tour;
     }

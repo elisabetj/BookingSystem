@@ -4,17 +4,22 @@ package hbv201g.bookingsystem;
  * @author Ester Jenný (ejb7)
  **/
 public class Hotel {
-    private String Hotel;
+    private String hotel;
+
+    @Override
+    public String toString(){
+        return hotel;
+    }
 
     public Hotel(String hotel) {
-        Hotel = hotel;
+        this.hotel = hotel;
     }
 
     public String getHotel() {
-        return Hotel;
+        return hotel;
     }
 
     public void setHotel(String hotel) {
-        Hotel = hotel;
+        this.hotel = hotel;
     }
 }

@@ -7,15 +7,19 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class HelloController implements Initializable {
+    private ObservableList<Tour> tours = FXCollections.observableArrayList();
+    private ObservableList<Hotel> hotels = FXCollections.observableArrayList();
+
     @FXML
-    private ListView tourListView;
+    private ListView<Tour> tourListView = new ListView<Tour>(tours);
     @FXML
-    private ListView hotelListView ;
+    private ListView<Hotel> hotelListView = new ListView<Hotel>(hotels);
     @FXML
     private TextField customerTextField;
     @FXML
@@ -23,16 +27,19 @@ public class HelloController implements Initializable {
     @FXML
     private Button button;
 
-    private Data data = new Data();
-    private ObservableList<Tour> tour = FXCollections.observableArrayList();
-    private ObservableList<Hotel> hotel = FXCollections.observableArrayList();
+    Data data = new Data();
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        tour = data.getTour();
-        tourListView.setItems(tour);
+        tours = data.getTour();
+        tourListView.setItems(tours);
 
-        hotel = data.getHotel();
-        hotelListView.setItems(hotel);
+        hotels = data.getHotel();
+        hotelListView.setItems(hotels);
+    }
+
+    public void buttonMouseClicked (MouseEvent mouseEvent){
+
     }
 }

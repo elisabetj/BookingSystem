@@ -18,20 +18,20 @@ public class Data {
     }
 
     public ObservableList<Booking> getBooking(){
-        ObservableList<Booking> booking = FXCollections.observableArrayList();
-        return booking;
+        ObservableList<Booking> bookings = FXCollections.observableArrayList();
+        return bookings;
     }
 
-    public ArrayList<Tour> getTour() {
-        ArrayList<Tour> tour = new ArrayList<>();
+    public ObservableList<Tour> getTour() {
+        ObservableList<Tour> tour = FXCollections.observableArrayList();
         tour.add(new Tour("Sightseeing"));
         tour.add(new Tour("Horse riding"));
 
         return tour;
     }
 
-    public ArrayList<Hotel> getHotel(){
-        ArrayList<Hotel> hotel = new ArrayList<>();
+    public ObservableList<Hotel> getHotel(){
+        ObservableList<Hotel> hotel = FXCollections.observableArrayList();
         hotel.add(new Hotel("Hotel 1"));
         hotel.add(new Hotel("Hotel 2"));
 
