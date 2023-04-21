@@ -38,7 +38,7 @@ public class HelloController implements Initializable {
         Customer customer = new Customer(name, email);
 
 
-        System.out.println(customer.getName());
+        System.out.println(customer);
     }
 
     @Override
@@ -53,14 +53,15 @@ public class HelloController implements Initializable {
     public void listViewHotelClicked(MouseEvent mouseEvent){
         Hotel selectedItem = (Hotel) hotelListView.getSelectionModel().getSelectedItem();
 
+        Booking booking = new Trip();
+
         System.out.println(hotelListView.getSelectionModel().getSelectedItem());
     }
 
     public void listViewTourClicked(MouseEvent mouseEvent){
         Tour selectedItem = (Tour) tourListView.getSelectionModel().getSelectedItem();
+
         System.out.println(tourListView.getSelectionModel().getSelectedItem());
     }
-
-
 
 }
