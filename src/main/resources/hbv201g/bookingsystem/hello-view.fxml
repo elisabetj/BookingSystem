@@ -47,7 +47,11 @@
                </font>
             </Button>
             <Button fx:id="buttonTour" layoutX="397.0" layoutY="403.0" mnemonicParsing="false" onAction="#buttonTourOnActivity" prefHeight="26.0" prefWidth="104.0" text="Book Tour" />
-            <Text layoutX="288.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Label fx:id="bookingConfirmed" layoutX="19.0" layoutY="429.0" prefHeight="65.0" prefWidth="562.0" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>
