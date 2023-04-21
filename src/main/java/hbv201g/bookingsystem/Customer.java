@@ -9,6 +9,7 @@ public class Customer {
     private String name;
     private String email;
 
+
     public Customer(String name, String email) {
         this.name = name;
         this.email = email;
@@ -29,5 +30,4 @@ public class Customer {
     public void setEmail(String email) {
         this.email = email;
     }
-
 }
