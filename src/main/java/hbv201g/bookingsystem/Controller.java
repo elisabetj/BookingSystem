@@ -14,7 +14,7 @@ import javafx.scene.input.MouseEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class HelloController implements Initializable {
+public class Controller implements Initializable {
     private ObservableList<Tour> tours = FXCollections.observableArrayList();
     private ObservableList<Hotel> hotels = FXCollections.observableArrayList();
 
