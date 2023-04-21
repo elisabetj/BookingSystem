@@ -30,12 +30,34 @@ public class HelloController implements Initializable {
 
     Data data = new Data();
 
-    public void buttonOnActivity(ActionEvent event){
+    public void buttonHotelOnActivity(ActionEvent event){
 
         String name = customerTextField.getText();
         String email = emailTextField.getText();
 
         Customer customer = new Customer(name, email);
+        Hotel selectedItem = (Hotel) hotelListView.getSelectionModel().getSelectedItem();
+        System.out.println(selectedItem);
+
+        Booking booking= new Trip();
+        booking.bookHotel(selectedItem, customer);
+
+
+
+        System.out.println(customer);
+    }
+    public void buttonTourOnActivity(ActionEvent event){
+
+        String name = customerTextField.getText();
+        String email = emailTextField.getText();
+
+        Customer customer = new Customer(name, email);
+        Tour selectedItem = (Tour) tourListView.getSelectionModel().getSelectedItem();
+        System.out.println(selectedItem);
+
+        Booking booking= new Trip();
+        booking.bookTour(selectedItem, customer);
+
 
 
         System.out.println(customer);
