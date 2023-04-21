@@ -3,8 +3,6 @@ package hbv201g.bookingsystem;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import java.util.ArrayList;
-
 /**
  * @author Ester Jenný (ejb7)
  **/

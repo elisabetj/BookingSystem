@@ -8,12 +8,12 @@ import java.util.ArrayList;
 public class Customer {
     private String name;
     private String email;
-    private ArrayList<Booking> booking;
+    private ArrayList<Booking> bookings;
 
     public Customer(String name, String email) {
         this.name = name;
         this.email = email;
-        this.booking = new ArrayList<>();
+        this.bookings = new ArrayList<>();
     }
 
     public String getName() {
@@ -32,12 +32,12 @@ public class Customer {
         this.email = email;
     }
 
-    public ArrayList<Booking> getBooking() {
-        return booking;
+    public ArrayList<Booking> getBookings() {
+        return bookings;
     }
 
-    public void setBooking(ArrayList<Booking> booking) {
-        this.booking = booking;
+    public void setBookings(ArrayList<Booking> bookings) {
+        this.bookings = bookings;
     }
 
 }
