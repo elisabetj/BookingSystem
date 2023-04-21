@@ -26,14 +26,18 @@ public class Data {
         ObservableList<Tour> tour = FXCollections.observableArrayList();
         tour.add(new Tour("Sightseeing"));
         tour.add(new Tour("Horse riding"));
+        tour.add(new Tour("Glacier Hike"));
+        tour.add(new Tour("Walking tour"));
 
         return tour;
     }
 
     public ObservableList<Hotel> getHotel(){
         ObservableList<Hotel> hotel = FXCollections.observableArrayList();
-        hotel.add(new Hotel("Hotel 1"));
-        hotel.add(new Hotel("Hotel 2"));
+        hotel.add(new Hotel("Hotel Reykjavik"));
+        hotel.add(new Hotel("Hotel Akureyri"));
+        hotel.add(new Hotel("Hotel Laugavegur"));
+        hotel.add(new Hotel("Hotel Mývatn"));
 
         return hotel;
     }

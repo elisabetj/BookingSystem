@@ -5,6 +5,9 @@ package hbv201g.bookingsystem;
  **/
 public class Trip implements Booking {
 
+    public Trip() {
+    }
+
     @Override
     public void bookTour(Tour tour, Customer customer) {
         book(tour, customer);
@@ -19,6 +22,8 @@ public class Trip implements Booking {
     }
 
     public void bookAccommodation(Hotel hotel, Customer customer){
-        System.out.println("Hotel " + hotel.getHotel() + " booked by "+ customer.getName()+" ("+customer.getEmail()+")");
+        System.out.println( "Hotel " + hotel.getHotel() + " booked by "+ customer.getName()+" ("+customer.getEmail()+")");
     }
+
+
 }
